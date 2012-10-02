@@ -1,0 +1,35 @@
+                The Person Protocol
+
+Abstract
+
+    This protocol describes a person. That is all.
+
+Table of Contents
+
+   1.  Introduction . . . . . . . . . . . . . . . . . . . . . . . . .  4
+     1.1.  Terminology  . . . . . . . . . . . . . . . . . . . . . . .  5
+     1.2.  Notations  . . . . . . . . . . . . . . . . . . . . . . . .  5
+
+1.      Introduction
+
+1.1.    Terminology
+
+   The key words "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT,"
+   "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL" in this
+   document are to be interpreted as described in RFC2119 [6].
+
+1.2.    Notations
+
+2.      Data Types
+
+3.      Data Model
+3.1.        Person Class
+3.1.1           Phone Type
+3.2.        Phone Number Class      
+11.     Acknowledgments
+
+12.     References
+
+Full Copyright Statement
+
+http://creativecommons.org/licenses/by-sa/3.0

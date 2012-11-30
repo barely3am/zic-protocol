@@ -3,6 +3,7 @@ EXTRA_DIST = src
 ME=protocol-magic
 BUILD=$(shell git describe --tags)
 SNAPSHOT=$(ME)-$(BUILD)
+SRC=src/person.proto
 
 all: default
 
@@ -12,28 +13,16 @@ default:
 install:
 	@echo "Please read the README before beginning your installation."
 
-perl: pbperl 
-pbperl:
+perl:
 	$(PERL) sbin/generate_perl_bindings.pl
 
-cpp: protobuf_cpp
-pbcpp:
+cpp: 
 	[ -d pb-cpp ] || mkdir pb-cpp
-	$(PROTOC) --cpp_out=pb-cpp $(PROTOFILES)
+	$(PROTOC) --cpp_out=pb-cpp $(SRC)
 
-python: pbpython
-pbpython:
+python:
 	[ -d pb-python ] || mkdir pb-python
-	$(PROTOC) --python_out=pb-python $(PROTOFILES) 
-
-tpython:
-	@echo "not implemented yet..."
-
-tcpp:
-	@echo "not implemented yet..."
-
-tperl:
-	@echo "not implemented yet..."
+	$(PROTOC) --python_out=pb-python $(SRC) 
 
 clean:
 	rm Makefile
@@ -44,6 +33,7 @@ realclean: clean
 	rm Makefile.in
 	rm configure
 	rm aclocal.m4
+	rm -R -f pb-*
 
 reconf:
 	autoreconf -vf

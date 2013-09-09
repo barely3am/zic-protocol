@@ -80,13 +80,11 @@ A persons work number.
 6. Data Types
 ==
 
-
-7. Reference Implementations
-==
-1. Google Protocol Buffers Developer Guide - [developers.google.com](https://developers.google.com/protocol-buffers/docs/overview)
-
 8. References
 ==
+8.1. Implementations
+--
+1. Google Protocol Buffers Developer Guide - [developers.google.com](https://developers.google.com/protocol-buffers/docs/overview)
 
 9. Bibliography
 ==

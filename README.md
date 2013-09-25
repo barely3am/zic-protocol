@@ -146,4 +146,7 @@ Enumerated types are represented by the ENUM data type, and consist of an ordere
 
 8.2 References
 --
+1. CSIRT Gadgets Protocols - [csirtgadgets.org](http://csirtgadgets.org/rfc)
+1. ZeroMQ RFC - [rfc.zeromq.org](http://rfc.zeromq.org/)
+1. Consensus Oriented Specification System - [digistan.org](http://www.digistan.org/)
 1. Freeformatter (xml to xsd, json validation, etc) - [freeformatter.com](http://www.freeformatter.com/)

@@ -91,18 +91,18 @@ message Person {
 
 The aggregate class that constitute Person is:
 
-### PhoneNumber
+### 6.1.1 PhoneNumber
 Zero or many. STRING. A free-form string representing the person's phone number.
 
-### Name
+### 6.1.2 Name
 Exactly One. STRING. A free-form string representing the person's name.
 
-### Email
+### 6.1.3 Email
 Zero or many. STRING. A free-form string representing the person's email address.
 
 The Person class has one attribute:
 
-### id
+### 6.1.4 id
 Required. A unique identifier representing the person.
 
 ## 6.2 PhoneNumber

@@ -114,7 +114,7 @@ Optional. String. A free-form string representing the persons email address.
 ```
 
 ### number
-Required. String. A free-form string representing the perons phone number.
+Required. String. A free-form string representing the persons phone number.
 
 ### type
 Optional. Enum. This attribute indicates the type of phone number being represented by number.
@@ -131,9 +131,6 @@ WORK
 
 A persons work number.
 
-## 6.3 PhoneType
-
-
 6. Data Types
 ==
 
@@ -143,6 +140,6 @@ A persons work number.
 --
 1. Google Protocol Buffers Developer Guide - [developers.google.com](https://developers.google.com/protocol-buffers/docs/overview)
 
-9. Bibliography
-==
-1. "Key words for use in RFCs to Indicate Requirement Levels" - [ietf.org](http://tools.ietf.org/html/rfc2119)
+8.2 References
+--
+1. Freeformatter - [freeformatter.com](http://www.freeformatter.com/)

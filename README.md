@@ -33,10 +33,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
         <name>Jimmybob</name>
         <email>jimmy@bob.com</email>
         <id>1</id>
-        <PhoneNumber>
-            <number>+1 111-555-1212</number>
-            <type>MOBILE</type>
-        </PhoneNumber>
+        <PhoneNumber ptype="mobile">+1 111-555-1212</PhoneNumber>
     </Person>
 </xml>
 ```
@@ -50,8 +47,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
         "id": 1,
         "PhoneNumber": [
             {
-                "number": "+1 111-555-1212",
-                "type": "MOBILE"
+                "content": "+1 111-555-1212",
+                "ptype": "MOBILE"
             }
         ]
     }
@@ -62,19 +59,18 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ```
 message Person {
-  required string name = 1;
-  required int32 id = 2;
-  optional string email = 3;
-
-  enum PhoneType {
-    MOBILE = 0;
-    HOME = 1;
-    WORK = 2;
-  }
+  required string name  = 1;
+  required int32 id     = 2;
+  repeated string Email = 3;
 
   message PhoneNumber {
-    required string number = 1;
-    optional PhoneType type = 2 [default = HOME];
+      enum ptype_type {
+        mobile  = 0;
+        home    = 1;
+        work    = 2;
+    }
+    required string content = 1;
+    optional ptype_type ptype = 2 [ default = home ];
   }
 
   repeated PhoneNumber phone = 4;
@@ -88,48 +84,50 @@ message Person {
 +---------------+
 | Person        |
 +---------------+
-| STRING name   |<>--{0..*}[ PhoneNumber    ]
-| INT32 id      |
-| STRING email  |
+| INT32 id      |<>--------[ Name           ]
+|               |<>--{0..*}[ PhoneNumber    ]
+|               |<>--{0..*}[ Email          ]
 +---------------+
 ```
 
+The aggregate class that constitute Person is:
+
 ### PhoneNumber
-Zero or many.
+Zero or many. STRING. A free-form string representing the person's phone number.
 
-### name
-Required. String. A free-form string representing the persons name.
+### Name
+Exactly One. STRING. A free-form string representing the person's name.
 
-### email
-Optional. String. A free-form string representing the persons email address.
+### Email
+Zero or many. STRING. A free-form string representing the person's email address.
+
+The Person class has one attribute:
+
+### id
+Required. A unique identifier representing the person.
 
 ## 6.2 PhoneNumber
 ```
 +------------------+
 | PhoneNumber      |
 +------------------+
-| STRING number    |
-| ENUM type        |
+| STRING           |
+|                  |
+| ENUM ptype       |
 +------------------+
 ```
 
+The PhoneNumber class has two attributes:
+
 ### number
-Required. String. A free-form string representing the persons phone number.
+Required. STRING. A free-form string representing the persons phone number.
 
-### type
-Optional. Enum. This attribute indicates the type of phone number being represented by number.
+### ptype
+Optional. ENUM. This attribute indicates the type of phone number being represented by number.
 
-MOBILE
-
-A persons mobile number.
-
-HOME
-
-A persons home number.
-
-WORK
-
-A persons work number.
+1. **mobile**. A persons mobile number.
+1. **home**. A persons home number.
+1. **work**. A persons work number.
 
 6. Data Types
 ==

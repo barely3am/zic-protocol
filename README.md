@@ -142,4 +142,4 @@ A persons work number.
 
 8.2 References
 --
-1. Freeformatter - [freeformatter.com](http://www.freeformatter.com/)
+1. Freeformatter (xml to xsd, json validation, etc) - [freeformatter.com](http://www.freeformatter.com/)

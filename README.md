@@ -79,6 +79,8 @@ message Person {
 6. Protocol
 ==
 ## 6.1 Person
+The Person class is the top level class for stalking your loved ones. For each class, the semantics will be described and the relationship with other classes will be depicted with UML. 
+
 ```
 +---------------+
 | Person        |
@@ -91,21 +93,23 @@ message Person {
 
 The aggregate class that constitute Person is:
 
-### 6.1.1 PhoneNumber
+### PhoneNumber
 Zero or many. STRING. A free-form string representing the person's phone number.
 
-### 6.1.2 Name
+### Name
 Exactly One. STRING. A free-form string representing the person's name.
 
-### 6.1.3 Email
+### Email
 Zero or many. STRING. A free-form string representing the person's email address.
 
 The Person class has one attribute:
 
-### 6.1.4 id
-Required. A unique identifier representing the person.
+### id
+Required. INT32. A unique identifier representing the person.
 
 ## 6.2 PhoneNumber
+The PhoneNumber class is all about storing meta-data, errr phone numbers about people in the Person class.
+
 ```
 +------------------+
 | PhoneNumber      |
@@ -130,6 +134,9 @@ Optional. ENUM. This attribute indicates the type of phone number being represen
 
 6. Data Types
 ==
+Enumerated Types
+--
+Enumerated types are represented by the ENUM data type, and consist of an ordered list of acceptable values.  Each value has a representative keyword.  Within the schema, the enumerated type keywords are used as attribute values.
 
 8. References
 ==

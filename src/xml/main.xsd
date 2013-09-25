@@ -8,10 +8,11 @@
         <xs:element type="xs:byte" name="id"/>
         <xs:element name="PhoneNumber">
           <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="number"/>
-              <xs:element type="xs:string" name="type"/>
-            </xs:sequence>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="ptype"/>
+              </xs:extension>
+            </xs:simpleContent>
           </xs:complexType>
         </xs:element>
       </xs:sequence>

@@ -1,10 +1,10 @@
 1. Goals
 ==
-The ZIC protocol is a magical protocol that enables you to track people's phone numbers, just like the government!
+The Zic protocol is a magical protocol that enables you to track people's phone numbers, just like the government!
 
 * To enable nerds to stalk their love interests
 * To help you listen in on your loved-ones conversations more easily
-* To re-invent the need for facebook
+* To re-invent the need for Facebook
 
 2. License
 ==

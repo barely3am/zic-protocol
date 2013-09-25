@@ -42,8 +42,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 {
     "Person": {
         "@id": 1,
-        "Email":["jimmy@bob.com"],
         "Name": "JimmyBob",
+        "Email":["jimmy@bob.com"],
         "PhoneNumber": [
             {
                 "content": "+1 111-555-1212",

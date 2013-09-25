@@ -46,7 +46,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
         "Email":["jimmy@bob.com"],
         "PhoneNumber": [
             {
-                "content": "+1 111-555-1212",
+                "#text": "+1 111-555-1212",
                 "@ptype": "mobile"
             }
         ]

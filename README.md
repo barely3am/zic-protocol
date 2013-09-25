@@ -129,8 +129,8 @@ Required. STRING. A free-form string representing the persons phone number.
 Optional. ENUM. This attribute indicates the type of phone number being represented by number.
 
 1. **mobile**. A persons mobile number.
-1. **home**. A persons home number.
-1. **work**. A persons work number.
+2. **home**. A persons home number.
+3. **work**. A persons work number.
 
 6. Data Types
 ==

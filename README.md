@@ -30,8 +30,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ```
 <?xml version="1.0" encoding="UTF-8"?>
     <Person>
-        <name>Jimmybob</name>
-        <email>jimmy@bob.com</email>
+        <Name>Jimmybob</Name>
+        <Email>jimmy@bob.com</Email>
         <id>1</id>
         <PhoneNumber ptype="mobile">+1 111-555-1212</PhoneNumber>
     </Person>
@@ -42,13 +42,13 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ```
 {
     "Person": {
-        "email": "jimmy@bob.com",
-        "name": "JimmyBob",
+        "Email":["jimmy@bob.com"],
+        "Name": "JimmyBob",
         "id": 1,
         "PhoneNumber": [
             {
                 "content": "+1 111-555-1212",
-                "ptype": "MOBILE"
+                "ptype": "mobile"
             }
         ]
     }
@@ -63,7 +63,7 @@ message Person {
   required int32 id     = 2;
   repeated string Email = 3;
 
-  message PhoneNumber {
+  message PhoneNumberType {
       enum ptype_type {
         mobile  = 0;
         home    = 1;
@@ -73,7 +73,7 @@ message Person {
     optional ptype_type ptype = 2 [ default = home ];
   }
 
-  repeated PhoneNumber phone = 4;
+  repeated PhoneNumberType PhoneNumber = 4;
 }
 ```
 

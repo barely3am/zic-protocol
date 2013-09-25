@@ -85,9 +85,9 @@ The Person class is the top level class for stalking your loved ones. For each c
 +---------------+
 | Person        |
 +---------------+
-| INT32 id      |<>--------[ Name           ]
-|               |<>--{0..*}[ PhoneNumber    ]
-|               |<>--{0..*}[ Email          ]
+| INT32 id      |<>----------[ Name           ]
+|               |<>--{0..*}--[ PhoneNumber    ]
+|               |<>--{0..*}--[ Email          ]
 +---------------+
 ```
 

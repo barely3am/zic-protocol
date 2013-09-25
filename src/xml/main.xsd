@@ -1,3 +1,4 @@
+<!-- generated via http://www.freeformatter.com/xsd-generator.html not validated, just an example -->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="Person">
     <xs:complexType>

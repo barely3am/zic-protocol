@@ -38,17 +38,18 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ```
 {
-    Person    => {
-    	name	=> 'JimmyBob',
-    	id		=> 1,
-    	email	=> 'jimmy@bob.com'
-    	PhoneNumber	=> [
-    		{
-    			number 	=> '+1 111-555-1212',
-    			type	=> 'MOBILE',
-    		}
-    	]
-]                     
+    "Person": {
+        "email": "jimmy@bob.com",
+        "name": "JimmyBob",
+        "id": 1,
+        "PhoneNumber": [
+            {
+                "number": "+1 111-555-1212",
+                "type": "MOBILE"
+            }
+        ]
+    }
+}
 ```
 
 ### 5.3 [Protocol Buffer](https://github.com/csirtgadgets/zic-protocol/blob/master/src/pb/main.proto)

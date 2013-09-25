@@ -41,13 +41,13 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ```
 {
     "Person": {
+        "@id": 1,
         "Email":["jimmy@bob.com"],
         "Name": "JimmyBob",
-        "id": 1,
         "PhoneNumber": [
             {
                 "content": "+1 111-555-1212",
-                "ptype": "mobile"
+                "@ptype": "mobile"
             }
         ]
     }

@@ -9,7 +9,7 @@ message Person {
         home    = 1;
         work    = 2;
     }
-    required string content = 1;
+    required string text = 1;
     optional ptype_type ptype = 2 [ default = home ];
   }
 

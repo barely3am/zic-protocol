@@ -20,13 +20,63 @@ You should have received a copy of the GNU Lesser General Public License along w
 This document is governed by the [Consensus-Oriented Specification System (COSS)](http://www.digistan.org/spec:1/COSS).
 
 
-4. Lanugage
+4. Language
 ==
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC [2119](http://www.ietf.org/rfc/rfc2119.txt).
 
-5. Protocol
+## 5. Examples
+### 5.1 XML
+
+```
+<?xml version="1.00">
+    <Person name="JimmyBob" id="1" email="jimmy@bob.com">
+        <PhoneNumber number="+1 111-555-1212" type="MOBILE"/>
+    </Person>
+</xml>
+```
+### 5.2 JSON
+
+```
+{
+    Person    => {
+    	name	=> 'JimmyBob',
+    	id		=> 1,
+    	email	=> 'jimmy@bob.com'
+    	PhoneNumber	=> [
+    		{
+    			number 	=> '+1 111-555-1212',
+    			type	=> 'MOBILE',
+    		}
+    	]
+]                     
+```
+
+### 5.3 Protocol Buffer
+
+```
+message Person {
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    required string number = 1;
+    optional PhoneType type = 2 [default = HOME];
+  }
+
+  repeated PhoneNumber phone = 4;
+}
+```
+
+6. Protocol
 ==
-## 5.1 Person
+## 6.1 Person
 ```
 +---------------+
 | Person        |
@@ -46,7 +96,7 @@ Required. String. A free-form string representing the persons name.
 ### email
 Optional. String. A free-form string representing the persons email address.
 
-## 5.2 PhoneNumber
+## 6.2 PhoneNumber
 ```
 +------------------+
 | PhoneNumber      |
@@ -74,7 +124,7 @@ WORK
 
 A persons work number.
 
-## 5.3 PhoneType
+## 6.3 PhoneType
 
 
 6. Data Types

@@ -28,9 +28,15 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ### 5.1 [XML](https://github.com/csirtgadgets/zic-protocol/blob/master/src/xml/main.xsd)
 
 ```
-<?xml version="1.00">
-    <Person name="JimmyBob" id="1" email="jimmy@bob.com">
-        <PhoneNumber number="+1 111-555-1212" type="MOBILE"/>
+<?xml version="1.0" encoding="UTF-8"?>
+    <Person>
+        <name>Jimmybob</name>
+        <email>jimmy@bob.com</email>
+        <id>1</id>
+        <PhoneNumber>
+            <number>+1 111-555-1212</number>
+            <type>MOBILE</type>
+        </PhoneNumber>
     </Person>
 </xml>
 ```

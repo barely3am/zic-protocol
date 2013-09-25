@@ -25,7 +25,7 @@ This document is governed by the [Consensus-Oriented Specification System (COSS)
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC [2119](http://www.ietf.org/rfc/rfc2119.txt).
 
 ## 5. Examples
-### 5.1 XML
+### 5.1 [XML](https://github.com/csirtgadgets/zic-protocol/blob/master/src/xml/main.xsd)
 
 ```
 <?xml version="1.00">
@@ -51,7 +51,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ]                     
 ```
 
-### 5.3 Protocol Buffer
+### 5.3 [Protocol Buffer](https://github.com/csirtgadgets/zic-protocol/blob/master/src/pb/main.proto)
 
 ```
 message Person {

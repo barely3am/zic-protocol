@@ -29,10 +29,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-    <Person>
+    <Person id="1">
         <Name>Jimmybob</Name>
         <Email>jimmy@bob.com</Email>
-        <id>1</id>
         <PhoneNumber ptype="mobile">+1 111-555-1212</PhoneNumber>
     </Person>
 </xml>

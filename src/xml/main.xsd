@@ -3,9 +3,8 @@
   <xs:element name="Person">
     <xs:complexType>
       <xs:sequence>
-        <xs:element type="xs:string" name="name"/>
-        <xs:element type="xs:string" name="email"/>
-        <xs:element type="xs:byte" name="id"/>
+        <xs:element type="xs:string" name="Name"/>
+        <xs:element type="xs:string" name="Email"/>
         <xs:element name="PhoneNumber">
           <xs:complexType>
             <xs:simpleContent>
@@ -16,6 +15,7 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+      <xs:attribute type="xs:int32" name="id"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

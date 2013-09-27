@@ -19,8 +19,8 @@ You should have received a copy of the GNU Lesser General Public License along w
 ==
 This document is governed by the [Consensus-Oriented Specification System (COSS)](http://www.digistan.org/spec:1/COSS). In addition:
 
-* Comments SHOULD be logged as new issues.
-* Contributions SHOULD be logged as new pull-requests.
+* Comments MUST be logged as [new issues](https://github.com/blog/411-github-issue-tracker).
+* Contributions MUST be logged as [new pull-requests](https://help.github.com/articles/creating-a-pull-request).
 
 4. Language
 ==

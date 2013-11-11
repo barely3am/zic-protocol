@@ -130,6 +130,8 @@ Enumerated types are represented by the ENUM data type, and consist of an ordere
 
 # 8. References
 ## Known Implementations
+
+* libzic - [github.com/csirtgadgets](https://github.com/csirtgadgets/libzic)
 * Google Protocol Buffers Developer Guide - [developers.google.com](https://developers.google.com/protocol-buffers/docs/overview)
 
 ## Other Examples

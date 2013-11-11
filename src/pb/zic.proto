@@ -1,17 +1,21 @@
-message Person {
-  required string name  = 1;
-  required int32 id     = 2;
-  repeated string Email = 3;
-
-  message PhoneNumberType {
+message PhoneNumberType {
       enum ptype_type {
         mobile  = 0;
         home    = 1;
         work    = 2;
     }
-    required string text = 1;
-    optional ptype_type ptype = 2 [ default = home ];
-  }
+    required string text        = 1;
+    optional ptype_type ptype   = 2 [ default = home ];
+}
 
-  repeated PhoneNumberType PhoneNumber = 4;
+message PersonType {
+    // attribs
+    required double version = 1;
+    required int32 id       = 2;
+
+    // classes
+    required string Name    = 3;
+    repeated string Email   = 4;
+
+    repeated PhoneNumberType PhoneNumber = 5;
 }

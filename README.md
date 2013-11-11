@@ -140,7 +140,7 @@ Enumerated types are represented by the ENUM data type, and consist of an ordere
 * [heri-protocol](https://github.com/csirtgadgets/krenk-protocol) - reusable generic objects
 * [sofur-protocol](https://github.com/csirtgadgets/krenk-protocol) - reusable filesystem objects
 * [sligo-protocol](https://github.com/csirtgadgets/krenk-protocol) - reusable network metat-data objects
-* [sagar-protocol](https://github.com/csirtgadgets/krenk-protocol) - an intellgigence exchange protocols
+* [sagar-protocol](https://github.com/csirtgadgets/krenk-protocol) - an intelligence exchange protocols
 
 
 ## Misc

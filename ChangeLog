@@ -1,4 +1,8 @@
 Revision history for zic-protocol.
 
-0.0.1 2012-05-10
+0.0.02  2013-11-11
+    - cleaned up README.md a bit, added more references
+    - removed xsd (see examples section of README.md)
+
+0.0.1 2013-05-10
     - initial release

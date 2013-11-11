@@ -120,6 +120,10 @@ Optional. ENUM. This attribute indicates the type of phone number being represen
 ```
 
 # 7. Data Types
+## Real Numbers
+
+Real (floating-point) attributes are represented by the REAL data type. Real data MUST be encoded in Base 10.
+
 ## Enumerated Types
 
 Enumerated types are represented by the ENUM data type, and consist of an ordered list of acceptable values.  Each value has a representative keyword.  Within the schema, the enumerated type keywords are used as attribute values.

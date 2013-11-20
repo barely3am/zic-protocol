@@ -1,0 +1,77 @@
+{
+    "type":"object",
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "http://jsonschema.net",
+    "required":false,
+    "properties":{
+        "Person": {
+            "type":"array",
+            "id": "http://jsonschema.net/Person",
+            "required":false,
+            "items":
+                {
+                    "type":"object",
+                    "id": "http://jsonschema.net/Person/0",
+                    "required":false,
+                    "properties":{
+                        "@id": {
+                            "type":"number",
+                            "id": "http://jsonschema.net/Person/0/@id",
+                            "required":false
+                        },
+                        "@version": {
+                            "type":"string",
+                            "id": "http://jsonschema.net/Person/0/@version",
+                            "required":false
+                        },
+                        "Email": {
+                            "type":"array",
+                            "id": "http://jsonschema.net/Person/0/Email",
+                            "required":false,
+                            "items":
+                                {
+                                    "type":"string",
+                                    "id": "http://jsonschema.net/Person/0/Email/0",
+                                    "required":false
+                                }
+                            
+
+                        },
+                        "Name": {
+                            "type":"string",
+                            "id": "http://jsonschema.net/Person/0/Name",
+                            "required":false
+                        },
+                        "PhoneNumber": {
+                            "type":"array",
+                            "id": "http://jsonschema.net/Person/0/PhoneNumber",
+                            "required":false,
+                            "items":
+                                {
+                                    "type":"object",
+                                    "id": "http://jsonschema.net/Person/0/PhoneNumber/0",
+                                    "required":false,
+                                    "properties":{
+                                        "#text": {
+                                            "type":"string",
+                                            "id": "http://jsonschema.net/Person/0/PhoneNumber/0/#text",
+                                            "required":false
+                                        },
+                                        "@ptype": {
+                                            "type":"string",
+                                            "id": "http://jsonschema.net/Person/0/PhoneNumber/0/@ptype",
+                                            "required":false
+                                        }
+                                    }
+                                }
+                            
+
+                        }
+                    }
+                }
+            
+
+        }
+    }
+}
+

@@ -149,3 +149,4 @@ Enumerated types are represented by the ENUM data type, and consist of an ordere
 * Consensus Oriented Specification System - [digistan.org](http://www.digistan.org/)
 * ZeroMQ RFC - [rfc.zeromq.org](http://rfc.zeromq.org/
 * Freeformatter (xml to xsd, json validation, etc) - [freeformatter.com](http://www.freeformatter.com/)
+* JSON Schema Generator [jsonschema.net](http://www.jsonschema.net/)

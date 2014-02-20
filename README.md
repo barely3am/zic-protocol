@@ -119,7 +119,7 @@ Optional. ENUM. This attribute indicates the type of phone number being represen
 }]
 ```
 
-# 6. Data Types
+# 7. Data Types
 ## Real Numbers
 
 Real (floating-point) attributes are represented by the REAL data type. Real data MUST be encoded in Base 10.
@@ -128,7 +128,7 @@ Real (floating-point) attributes are represented by the REAL data type. Real dat
 
 Enumerated types are represented by the ENUM data type, and consist of an ordered list of acceptable values.  Each value has a representative keyword.  Within the schema, the enumerated type keywords are used as attribute values.
 
-# 7. References
+# 8. References
 ## Known Implementations
 
 * libzic - [github.com/csirtgadgets](https://github.com/csirtgadgets/libzic)

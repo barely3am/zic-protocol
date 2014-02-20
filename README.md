@@ -25,7 +25,7 @@ This document is governed by the [Consensus-Oriented Specification System (COSS)
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 
-# 6. Protocol
+# 5. Protocol
 ## Person Class
 The Person class is the top level class for stalking your loved ones. For each class, the semantics will be described and the relationship with other classes will be depicted with UML. 
 
@@ -119,7 +119,7 @@ Optional. ENUM. This attribute indicates the type of phone number being represen
 }]
 ```
 
-# 7. Data Types
+# 6. Data Types
 ## Real Numbers
 
 Real (floating-point) attributes are represented by the REAL data type. Real data MUST be encoded in Base 10.
@@ -128,7 +128,7 @@ Real (floating-point) attributes are represented by the REAL data type. Real dat
 
 Enumerated types are represented by the ENUM data type, and consist of an ordered list of acceptable values.  Each value has a representative keyword.  Within the schema, the enumerated type keywords are used as attribute values.
 
-# 8. References
+# 7. References
 ## Known Implementations
 
 * libzic - [github.com/csirtgadgets](https://github.com/csirtgadgets/libzic)

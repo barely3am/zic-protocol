@@ -36,6 +36,7 @@ The Person class is the top level class for stalking your loved ones. For each c
 | REAL version  |<>----------[ Name           ]
 | INT32 id      |<>--{0..*}--[ PhoneNumber    ]
 |               |<>--{0..*}--[ Email          ]
+|               |<>--
 +---------------+
 ```
 
